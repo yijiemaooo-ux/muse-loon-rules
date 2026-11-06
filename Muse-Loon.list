@@ -1,0 +1,39 @@
+# NAME: Muse
+# FORMAT: Loon Remote Rule (.list)
+# SOURCE: MetaCubeX/meta-rules-dat meta branch geo/geosite/classical/meta.yaml (muse.ai / metaaivm.com / metaaiusercontent.com)
+#         cross-checked against juner922/muse-loon-rules MuseAI.list (Meta Muse client teardown, 2026-09-29)
+# UPDATED: 2026-11-01
+# SCOPE: Muse app / muse.ai web only, plus Meta account login dependencies.
+#        WhatsApp / Instagram are NOT included on purpose, so this stays a separate Muse-only rule.
+#        If you use Muse inside WhatsApp, add a WhatsApp rule separately.
+# TOTAL: 20
+
+# === Muse core ===
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaivm.com
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
+DOMAIN,hatch.ecto1.ai
+DOMAIN,node.hatch.one
+DOMAIN,meta.privacy-gateway.cloudflare.com
+DOMAIN,meta.hpke-keys.privacy-gateway.cloudflare.com
+DOMAIN,meta-ohttp-relay-prod.fastly-edge.com
+DOMAIN,meta-ohttp-config-prod.fastly-edge.com
+
+# === Meta account / login dependencies (auth.meta.com etc. need proxy too) ===
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,atmeta.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbpigeon.com
+DOMAIN-SUFFIX,fb.com
+
+# === Optional, uncomment if needed ===
+# DOMAIN-SUFFIX,whatsapp.com
+# DOMAIN-SUFFIX,whatsapp.net
+# DOMAIN-SUFFIX,instagram.com
+# DOMAIN-SUFFIX,cdninstagram.com
